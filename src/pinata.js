@@ -1,6 +1,6 @@
-const key = "82a74fa8d6efb619bfd1";
+const key = pinata_api_key;
 const secret =
-  "e0e0b3cfe02ad4f23212164dac891c4ebc87705dd27ce4b654e377ba5cd7abb3";
+  pinata_secrete_key;
 
 
 const axios = require("axios");
