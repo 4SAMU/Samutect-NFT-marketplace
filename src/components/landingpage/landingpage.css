@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.logo {
+  position: absolute;
+  width: 435px;
+  height: 125px;
+  left: 66px;
+  top: 46px;
+  background-image: url("./myLogo.png");
+}
+
+.textdetails {
+  position: absolute;
+  width: 500px;
+  height: 223px;
+  top: 66px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 75px;
+
+  color: #ffffff;
+}
+
+.textcollectNFts {
+  position: absolute;
+  width: 500px;
+  height: 67px;
+  top: 70px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 75px;
+
+  color: #ffffff;
+}
+
+.digitalarts {
+  position: absolute;
+  width: 700px;
+  height: 75px;
+  top: 275px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 75px;
+
+  /* identical to box height */
+
+  color: #0e5bef;
+}
+
+.tetxNFTS {
+  position: absolute;
+  width: 329px;
+  height: 87px;
+  top: 350px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 29px;
+
+  color: #ffffff;
+}
+
+.exploreBtn {
+  position: absolute;
+  width: 174px;
+  height: 50px;
+  top: 500px;
+
+  background: #474ef4;
+  border: none;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  border-radius: 10px;
+  cursor: pointer;
+  animation: bTn 7s linear infinite;
+}
+
+.exploreBtn:hover {
+  background-color: #0e5bef;
+}
+
+.connectwalletBtn {
+  position: absolute;
+  width: 300px;
+  height: 50px;
+  left: 991px;
+  top: 42px;
+
+  background: #474ef4;
+  border-radius: 10px;
+  border: none;
+
+  color: #ffffff;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  cursor: pointer;
+}
+.connectwalletBtn:hover {
+  background-color: #0e5bef;
+}
+
+.alertBOX {
+  position: relative;
+  width: max-content;
+  height: 50px;
+  left: 200px;
+  top: 500px;
+  background: none;
+  text-align: left;
+  font-style: italic;
+  color: #ee0404;
+  border: none;
+}
+
+.spiralImage {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  right: 70px;
+  top: 130px;
+}
+
+img {
+  width: 100%;
+}
+
+
+@keyframes bTn {
+  0% {
+    opacity: 1;
+    background: #12a3d1;
+  }
+  50% {
+    opacity: 1;
+    background: #3b2fc8;
+  }
+
+  100% {
+    opacity: 1;
+    background: #de13d6;
+  }
+}

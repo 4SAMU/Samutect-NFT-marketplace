@@ -1,0 +1,396 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.dashboard {
+  position: absolute;
+  width: 300px;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+
+  background-color: #06112c;
+}
+
+.logoDB {
+  position: absolute;
+  width: 191px;
+  height: 29px;
+  left: 14px;
+  top: 74px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+
+  color: #ffffff;
+}
+
+.listnftBoard {
+  position: absolute;
+  width: 743px;
+  height: 170px;
+  left: 304px;
+  top: 43px;
+
+  background: rgba(36, 54, 119, 0.8);
+  border-radius: 20px;
+}
+
+.text_listnftboard {
+  position: absolute;
+  width: 319.66px;
+  height: 70px;
+  left: 30px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
+
+  color: #ffffff;
+}
+.listNFTbtn {
+  position: absolute;
+  width: 200px;
+  height: 40px;
+  left: 30px;
+  top: 110px;
+
+  background: #474ef4;
+  border-radius: 10px;
+  border: none;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  cursor: pointer;
+}
+.listNFTbtn:hover {
+  background-color: #3fa9f5;
+}
+
+.monkeyPic {
+  position: absolute;
+  width: 196px;
+  height: 144px;
+  right: 10px;
+  top: 10px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.allNFTs {
+  position: absolute;
+  width: 743px;
+  height: 400px;
+  left: 305px;
+  bottom: 0ch;
+  background: rgba(15, 21, 43, 0.8);
+  overflow: auto;
+}
+
+.allNFTs_text {
+  position: absolute;
+  width: max-content;
+  height: 29px;
+  bottom: -40px;
+  left: 15px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 29px;
+
+  color: #ffffff;
+}
+.see_all_text {
+  position: absolute;
+  width: max-content;
+  height: 29px;
+  bottom: -40px;
+  right: 15px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 29px;
+
+  color: blue;
+  cursor: pointer;
+}
+
+.see_all_text:hover {
+  font-size: 24px;
+}
+
+.topNFTs {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 743px;
+  height: 230px;
+  left: 305px;
+  bottom: 0.2rem;
+
+  background: #06112c;
+  border-top: 1px solid rgba(49, 59, 94, 0.8);
+  color: #f9fbfd;
+}
+
+.line {
+  position: absolute;
+  width: 743px;
+  height: 400px;
+  left: 305px;
+  height: 50px;
+  top: 300px;
+  background: blue;
+  border: 1px solid rgba(70, 84, 134, 0.8);
+}
+
+.walletDetails {
+  position: absolute;
+  width: 315px;
+  height: 215px;
+  right: 0px;
+  top: 0px;
+
+  background: #06112c;
+}
+
+.walletAddress {
+  position: absolute;
+  width: 100px;
+  height: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 60px;
+  background: transparent;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 1px solid blue;
+  border-bottom: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 29px;
+  color: blue;
+}
+
+.walletBal {
+  position: absolute;
+  width: 100px;
+  height: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100px;
+  background: blue;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 29px;
+  color: #ffffff;
+}
+
+.connected {
+  position: absolute;
+  width: 150px;
+  height: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10px;
+
+  background: #474ef4;
+  border-radius: 10px;
+  border: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 29px;
+
+  color: #ffffff;
+}
+
+.connected_address {
+  top: 2px;
+}
+
+.connected_bal {
+  top: 2px;
+}
+
+.transactionDetails {
+  position: absolute;
+  width: 315px;
+  height: 440px;
+  right: 0px;
+  bottom: 0px;
+
+  background: #06112c;
+  border-top: 0.01px solid white;
+}
+
+.transactionDetails_text {
+  position: absolute;
+  width: max-content;
+  height: 29px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 7px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 29px;
+
+  color: #ffffff;
+}
+
+/* .navigationBtn {
+  position: absolute;
+  width: 149px;
+  height: 29px;
+  left: 47px;
+  top: 170px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 29px;
+
+  color: #ffffff;
+} */
+
+.searchBox {
+  position: absolute;
+  width: 500px;
+  height: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 9px;
+  background: #06112c;
+  border-radius: 7px;
+}
+
+.input_search {
+  position: absolute;
+  width: 450px;
+  height: 23px;
+  right: 50;
+  background: #06112c;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  border: none;
+  text-align: center;
+
+  color: #ffffff;
+  outline: 0ch;
+  border-right: 2px solid black;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+.search_icon {
+  position: absolute;
+  width: 50px;
+  height: 25px;
+  right: 1px;
+  cursor: pointer;
+  background: transparent;
+  border: 0ch;
+}
+
+.myCollection {
+  position: absolute;
+  width: 182px;
+  height: 29px;
+  left: 14px;
+  top: 170px;
+}
+
+.icon {
+  position: absolute;
+  width: 28px;
+  height: 29px;
+  left: 14px;
+  top: 1px;
+  color: #ffffff;
+  background: transparent;
+}
+
+.myCollection_text {
+  position: absolute;
+  width: max-content;
+  height: 29px;
+  left: 47px;
+  top: 0.5px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+
+  color: #ffffff;
+  cursor: pointer;
+}
+a:hover {
+  color: #474ef4;
+  font-size: 20px;
+}
+
+.sendTransaction {
+  position: absolute;
+  width: 221px;
+  height: 35px;
+  left: 14px;
+  top: 230px;
+}
+
+.TopUpBal {
+  position: absolute;
+  width: 203px;
+  height: 37px;
+  left: 14px;
+  top: 285px;
+}
+
+.Resources {
+  position: absolute;
+  width: 151px;
+  height: 29px;
+  left: 14px;
+  top: 350px;
+}
+
+.nftArea {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 6px;
+  margin-left: 4px;
+}
+
+.text {
+  position: relative;
+  color: #f9fbfd;
+}

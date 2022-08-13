@@ -1,0 +1,22 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+}
+
+a {
+  color: #f9fbfd;
+  text-decoration: none;
+  transition: all 400ms ease;
+}
+
