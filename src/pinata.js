@@ -1,6 +1,5 @@
-const key = <pinata_api_key_HERE>;
-const secret =
-  <pinata_secrete_key_HERE>;
+const key ="pinata_key" ;
+const secret ="pinata_secrete_key";
 
 
 const axios = require("axios");

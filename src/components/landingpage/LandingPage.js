@@ -28,6 +28,10 @@ export const LandingPage = () => {
   };
   connectWebsite();
 
+  // const WindowReload = ()=>{
+  //   window.location.replace("/#Home");
+  // }
+
   const isconnectedToWallet = async () => {
     if (!walletAdd) {
       setErrMessage(

@@ -3,6 +3,7 @@ import "../../App.css";
 import "./listNft.css";
 import { uploadFileToIPFS, uploadJSONToIPFS } from "../../pinata";
 import Marketplace from "../../Marketplace.json";
+import Navbar from "../Navbar/navbar";
 
 const ListNft = () => {
   const [formParams, updateFormParams] = useState({
@@ -101,6 +102,7 @@ const ListNft = () => {
   return (
     <section id="ListNFT">
       <div className="listNft_container">
+      <Navbar/>
         <div className="listBoard">
           <div className="nft_name">
             NFT Name

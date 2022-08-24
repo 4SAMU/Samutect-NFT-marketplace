@@ -2,14 +2,11 @@ import React, { useState } from "react";
 import "./homepage.css";
 import Monkey from "./monkey.png";
 import { FcSearch } from "react-icons/fc";
-import { BsCollection } from "react-icons/bs";
-import { AiOutlineTransaction } from "react-icons/ai";
-import { RiGasStationFill } from "react-icons/ri";
-import { GiBookshelf } from "react-icons/gi";
 import axios from "axios";
 import MarketplaceJSON from "../../Marketplace.json";
 import NFTTile from "../NFTTile";
 import { ethers } from "ethers";
+import Navbar from "../Navbar/navbar";
 
 const HomePage = () => {
   const [walletAdd, setWalletAdd] = useState("");
@@ -18,7 +15,7 @@ const HomePage = () => {
   const showBalance = async (walletAdd) => {
     try {
       const provider = new ethers.providers.JsonRpcProvider(
-        "https://eth-goerli.g.alchemy.com/v2/sLQ6yaCH5ykUITWx8na3rGlXASlwN7Ia"
+        <provide _eg alchemy or infura>
       );
       const balance = await provider.getBalance(walletAdd);
       console.log("balance =", parseFloat(ethers.utils.formatEther(balance)));
@@ -51,8 +48,8 @@ const HomePage = () => {
       };
     }
   };
-  connectWebsite();
-
+  connectWebsite()
+ 
   const sampleData = [
     {
       name: "NFT",
@@ -246,21 +243,20 @@ const HomePage = () => {
     );
     updateFetched(true);
     updateData(items);
+    connectWebsite();
   }
 
   if (!dataFetched) getAllNFTs();
   return (
     <section id="Home">
       <div className="App1">
-        <div className="dashboard">
-          <div className="logoDB">NFT marketplace</div>
-        </div>
+      <Navbar/>        
         <div className="listnftBoard">
           <div className="allNFTs_text">TOP NFTS</div>
           <div className="see_all_text">see all</div>
           <p className="text_listnftboard">Create your own NFT collection</p>
           <a href="#ListNFT">
-            <button className="listNFTbtn">List NFT</button>
+            <button className="listNFTbtn">upload NFTS</button>
           </a>
           <div className="monkeyPic">
             <img
@@ -295,25 +291,7 @@ const HomePage = () => {
             className="input_search"
           />
           <FcSearch className="search_icon" />
-        </div>
-        <div className="myCollection">
-          <BsCollection className="icon" />
-          <div className="myCollection_text">My collection</div>
-        </div>
-        <div className="sendTransaction">
-          <AiOutlineTransaction className="icon" />
-          <div className="myCollection_text">send Transaction</div>
-        </div>
-        <div className="TopUpBal">
-          <RiGasStationFill className="icon" />
-          <div className="myCollection_text">
-            <a href="https://goerlifaucet.com/">Top up wallet</a>
-          </div>
-        </div>
-        <div className="Resources">
-          <GiBookshelf className="icon" />
-          <div className="myCollection_text">Resources</div>
-        </div>
+        </div>       
       </div>
     </section>
   );
