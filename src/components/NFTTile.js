@@ -1,18 +1,22 @@
 import React from "react";
+
 import "./Homepage/homepage.css";
-// import axie from "../tile.jpeg";
-//import {Link} from "react-router-dom";
 
 function NFTTile(data) {
-
+  const newTo = ()=>{
+    window.location.replace("/Nft_page/"+data.data.tokenId)
+}
   return (
-    <div >
+    
+    <div onClick={newTo} >
       <img src={data.data.image} alt={data.data.name} className="nft"  onClick={null}/> 
-      <div class='text-on-image'>
+      <div className='text-on-image'>
       <h3> {data.data.name}</h3>
       <h3> {data.data.price} ETH</h3>      
    </div>    
     </div>
+    
+    
   );
 }
 

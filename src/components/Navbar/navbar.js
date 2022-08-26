@@ -22,7 +22,7 @@ const Navbar = () => {
         <div className="TopUpBal">
           <RiGasStationFill className="icon" />
           <div className="myCollection_text">
-            <a href="https://goerlifaucet.com/">Top up wallet</a>
+            <a href="https://goerlifaucet.com/" target="_blank">Top up wallet</a>
           </div>
         </div>
         <div className="Resources">

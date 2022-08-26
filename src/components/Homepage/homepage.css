@@ -417,3 +417,142 @@ a:hover {
   color: #ffffff;
   font-size: x-small;
 }
+
+
+
+.nfttile_details{
+  position: absolute;
+width: max-content;
+height: 25px;
+left: 494px;
+top: 520px;
+}
+
+
+
+.nft_container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  bottom: 0ch;
+  background: rgba(15, 21, 43, 0.8);
+  overflow: auto;
+}
+
+.nftBig{
+position: relative;
+width: 1360px;
+height: 426px;
+left: 0px;
+top: 0px;
+filter: blur(3px);
+border-radius: 0ch;
+}
+
+.nftSmall{
+  position: absolute;
+width: 297px;
+height: 302px;
+left: 81px;
+top: 185px;
+border:0.9px solid #f9fbfd;
+}
+
+.nftName{
+  position: absolute;
+width: 280px;
+height: 45px;
+left: 81px;
+top: 520px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 36px;
+
+color: #FFFFFF;
+}
+
+.nfttile_description{
+  height: max-content;
+  width: 350px;
+  top: 20px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+}
+
+.nftOwner{
+  position: relative;
+  width: max-content;
+  top: 0px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 36px;
+  
+  color: #FFFFFF;;
+}
+
+span{
+  font-size: 13px;
+}
+
+.BuyBtn{
+  position: absolute;
+width: 180px;
+height: 40px;
+left: 1030px;
+top: 529px;
+
+background: #0D67EF;
+border-radius: 10px;
+border: 0ch;
+color: #FFFFFF;
+font-size: 20px;
+}
+
+.u_own_this_nft{
+  position: absolute;
+  width: max-content;
+  height: 40px;
+  left: 1030px;
+  top: 529px;
+  color: #12a3d1;
+  font-size: 20px;
+}
+
+.buying_now{
+  position: relative;
+  width: max-content;
+  height: 40px;
+  left: 400px;
+  top: 450px;
+  color: #12a3d1;
+  font-size: 20px;
+}
+
+.homeIcon{
+  position: absolute;
+width: 60px;
+height: 35px;
+left: 81px;
+top: 57px;
+font-size: 30px;
+color:#12a3d1;
+background-color: #06112c;
+border-radius: 20px;
+border: none;
+box-shadow: 0 0 5px #06112c, 0 0 25px #06112c, 0 0 50px #06112c,
+    0 0 100px #06112c; 
+}
+.homeIcon:hover{
+  font-size: 25px;
+}
+

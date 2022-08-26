@@ -91,7 +91,7 @@ const ListNft = () => {
       alert("Successfully listed your NFT!");
       updateMessage("");
       updateFormParams({ name: "", description: "", price: "" });
-      window.location.replace("/");
+      window.location.replace("/Home");
     } catch (e) {
       updateMessage("failed, please fill all fields...");
       alert(e);
@@ -119,13 +119,14 @@ const ListNft = () => {
           </div>
           <div className="nft_description">
             NFT Description
-            <textarea
+            <textarea minlength="10" required
               cols="10"
               rows="5"
               placeholder="your NFT details"
               className="nft_description_textarea"
               id="description"
               type="text"
+              defaultValue="Check"
               value={formParams.description}
               onChange={(e) =>
                 updateFormParams({ ...formParams, description: e.target.value })

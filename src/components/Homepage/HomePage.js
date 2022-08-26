@@ -15,7 +15,7 @@ const HomePage = () => {
   const showBalance = async (walletAdd) => {
     try {
       const provider = new ethers.providers.JsonRpcProvider(
-        <provide _eg alchemy or infura>
+        "https://eth-goerli.g.alchemy.com/v2/SE27i7Xnlscs3YT_jkXpmfoAhszhxaqc"
       );
       const balance = await provider.getBalance(walletAdd);
       console.log("balance =", parseFloat(ethers.utils.formatEther(balance)));
@@ -51,16 +51,6 @@ const HomePage = () => {
   connectWebsite()
  
   const sampleData = [
-    {
-      name: "NFT",
-      description: "First NFT",
-      website: "http://axieinfinity.io",
-      image:
-        "https://i.pinimg.com/236x/03/4b/11/034b11e375eef760ecc30cf942c7bde1.jpg",
-      price: "0.03ETH",
-      currentlySelling: "True",
-      address: "0xe81Bf5A757CB4f7F82a2F23b1e59bE45c33c5b13",
-    },
     {
       name: "NFT",
       description: "NFT artwork",
@@ -121,87 +111,7 @@ const HomePage = () => {
       price: "0.03ETH",
       currentlySelling: "True",
       address: "0xe81Bf5A757CB4f7F82a2F23b1e59bE45c33c5b13",
-    },
-    {
-      name: "NFT",
-      description: "NFT artwork",
-      website: "http://axieinfinity.io",
-      image:
-        "https://i.pinimg.com/236x/2f/3f/47/2f3f47e9b9b7fe1c432ae062fd678190.jpg",
-      price: "0.03ETH",
-      currentlySelling: "True",
-      address: "0xe81Bf5A757CB4f7F82a2F23b1e59bE45c33c5b13",
-    },
-    {
-      name: "NFT",
-      description: "NFT artwork",
-      website: "http://axieinfinity.io",
-      image:
-        "https://i.pinimg.com/736x/50/f4/99/50f499bb06950e7b3fb3a424b3a89b09.jpg",
-      price: "0.03ETH",
-      currentlySelling: "True",
-      address: "0xe81Bf5A757CB4f7F82a2F23b1e59bE45c33c5b13",
-    },
-    {
-      name: "NFT",
-      description: "First NFT",
-      website: "http://axieinfinity.io",
-      image:
-        "https://i.pinimg.com/564x/b3/3d/65/b33d65a7e1faa2479c8081a063455fde.jpg",
-      price: "0.03ETH",
-      currentlySelling: "True",
-      address: "0xe81Bf5A757CB4f7F82a2F23b1e59bE45c33c5b13",
-    },
-    {
-      name: "NFT",
-      description: "First NFT",
-      website: "http://axieinfinity.io",
-      image:
-        "https://i.pinimg.com/236x/a0/82/43/a08243a7391148a58674c7ed3520be04.jpg",
-      price: "0.03ETH",
-      currentlySelling: "True",
-      address: "0xe81Bf5A757CB4f7F82a2F23b1e59bE45c33c5b13",
-    },
-    {
-      name: "NFT",
-      description: "First NFT",
-      website: "http://axieinfinity.io",
-      image:
-        "https://i.pinimg.com/236x/12/87/04/12870494b5d72f989d5ba1f25b53ae3d.jpg",
-      price: "0.03ETH",
-      currentlySelling: "True",
-      address: "0xe81Bf5A757CB4f7F82a2F23b1e59bE45c33c5b13",
-    },
-    {
-      name: "NFT",
-      description: "First NFT",
-      website: "http://axieinfinity.io",
-      image:
-        "https://i.pinimg.com/236x/fa/74/e6/fa74e62a64ef588b631bbbb06fe3b335.jpg",
-      price: "0.03ETH",
-      currentlySelling: "True",
-      address: "0xe81Bf5A757CB4f7F82a2F23b1e59bE45c33c5b13",
-    },
-    {
-      name: "NFT",
-      description: "First NFT",
-      website: "http://axieinfinity.io",
-      image:
-        "https://i.pinimg.com/236x/b7/b6/5d/b7b65d8c3ed8b5f45486e0ca3eb3bd1f.jpg",
-      price: "0.03ETH",
-      currentlySelling: "True",
-      address: "0xe81Bf5A757CB4f7F82a2F23b1e59bE45c33c5b13",
-    },
-    {
-      name: "NFT",
-      description: "First NFT",
-      website: "http://axieinfinity.io",
-      image:
-        "https://i.pinimg.com/236x/f8/7c/4b/f87c4b515fa9f09a191111593828bbad.jpg",
-      price: "0.03ETH",
-      currentlySelling: "True",
-      address: "0xe81Bf5A757CB4f7F82a2F23b1e59bE45c33c5b13",
-    },
+    }
   ];
   const [data, updateData] = useState(sampleData);
   const [dataFetched, updateFetched] = useState(false);
@@ -248,14 +158,13 @@ const HomePage = () => {
 
   if (!dataFetched) getAllNFTs();
   return (
-    <section id="Home">
-      <div className="App1">
+          <div className="App1">
       <Navbar/>        
         <div className="listnftBoard">
           <div className="allNFTs_text">TOP NFTS</div>
           <div className="see_all_text">see all</div>
           <p className="text_listnftboard">Create your own NFT collection</p>
-          <a href="#ListNFT">
+          <a href="ListNFT">
             <button className="listNFTbtn">upload NFTS</button>
           </a>
           <div className="monkeyPic">
@@ -293,7 +202,6 @@ const HomePage = () => {
           <FcSearch className="search_icon" />
         </div>       
       </div>
-    </section>
   );
 };
 

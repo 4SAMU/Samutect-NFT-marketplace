@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+// import { Link } from "react-router-dom";
 import "./landingpage.css";
 import SpiralImage from "./spiralImage.png";
 
@@ -41,7 +42,6 @@ export const LandingPage = () => {
   };
 
   return (
-    <section id="Landingpage">
       <div className="App">
         <div className="logo">
           <div className="textdetails">
@@ -57,9 +57,9 @@ export const LandingPage = () => {
           </div>
 
           {walletAdd ? (
-            <a href="#Home">
+           <a href="Home">
               <button className="exploreBtn"> Explore</button>
-            </a>
+           </a>
           ) : (
             <button className="exploreBtn" onClick={isconnectedToWallet}>
               Explore
@@ -82,7 +82,7 @@ export const LandingPage = () => {
           <img src={SpiralImage} alt="spiral"></img>
         </div>
       </div>
-    </section>
+  
   );
 };
 

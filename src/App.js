@@ -1,19 +1,23 @@
-import React, { Component } from "react";
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import HomePage from "./components/Homepage/HomePage";
 import LandingPage from "./components/landingpage/LandingPage";
-import ListNFT from "./components/listNft/listNft";
+import ListNft from "./components/listNft/listNft";
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <LandingPage />
-        <HomePage />
-        <ListNFT />
-      </div>
+
+const App=()=> {
+  
+  return (
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<LandingPage />}/>
+      <Route path="/Home/" element={<HomePage />}/> 
+      <Route path="/Nft_page/:tokenId" element={<NFTPage />}/>        
+      <Route path="/ListNFT/" element={<ListNft />}/> 
+    </Routes>
+  </BrowserRouter>
     );
-  }
-}
+  };
 
-export default App;
+export default App

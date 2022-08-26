@@ -36,6 +36,19 @@
   overflow: hidden;
 }
 
+.NFTPAGE{
+  position: relative;
+  width: 1366px;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+
+  background: #040713;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+
 @media screen and (min-width: 1370px) {
   .App {
     position: absolute;
